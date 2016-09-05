@@ -13,5 +13,6 @@ ADD startup.sh /root
 ADD index.html /var/www/html
 RUN chmod +x /root/startup.sh
 EXPOSE 80 
-CMD ["/root/startup.sh"]
+RUN /root/startup.sh
+ENTRYPOINT ["/etc/sbin/apache2ctl" "-D", "FOREGROUND"]
 
