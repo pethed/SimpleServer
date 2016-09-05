@@ -7,7 +7,7 @@ So, here is a container with Apache 2, php5-fpm and libapache2-mod-php5 installe
 
 ##How to use
 I created this for a single html-file. Place index.html in the same folder as the Dockerfile, run
-docker run -p [localport:containerport]
+docker run -d -p [localport:containerport] phedman:simpleserver
 Done.
 
 ##Disclaimer:
